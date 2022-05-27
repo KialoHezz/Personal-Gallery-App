@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Gallary</title>
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <!-- END css -->
+
+</head>
+<body>
+    <!-- navigation -->
+    {% include 'navbar.html' %}
+    <!-- END navigation -->
+
+    <!-- display content -->
+    {% block content %}{% endblock %}
+    <!-- END display -->
+
+    <!-- footer -->
+    <div class="footer">
+        <h3>APPS : HKN - 2022.04.14</h3>
+    </div>
+    <!-- END footer -->
+</body>
+</html>
