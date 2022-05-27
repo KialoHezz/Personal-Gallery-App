@@ -52,3 +52,20 @@ body{
     width: 30%;
     padding: 0.5rem 1rem;
 }
+/* end navigation */
+
+/* home page */
+.home-main{
+    text-align: center;
+    height: 40rem;
+
+    
+}
+/* end home page */
+
+
+/* footer */
+.footer{
+    text-align: center;
+}
+/* end */
