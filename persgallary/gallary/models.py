@@ -20,13 +20,13 @@ class Category(models.Model):
 class Image(models.Model):
     name = models.CharField(max_length=30)
     description = models.TextField()
-    image = models.ImageField(upload_to = 'images/')
+    image = models.ImageField( upload_to = 'images/',blank=True)
     updateAt = models.DateTimeField(auto_now_add= True)
     '''
     location and category are foreign keys or one to many relationships
     '''
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.SET_NULL, null=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
 
 
     def __str__(self):

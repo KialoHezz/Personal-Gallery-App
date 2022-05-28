@@ -72,6 +72,24 @@ body {
     height: 40rem;
 }
 
+.tcard{
+  background-color: rgba(235, 0, 0, 0.124);
+  border-radius: 2rem solid white;
+  width: 50%;
+  height: 50%;
+  padding:  1rem 1rem;
+  margin: .3rem 2rem;
+  position: absolute;
+  top: 25%;
+  left: 4%;
+  text-align: center;
+  align-items: center;
+
+}
+
+.tcard img{
+  height: 7rem;
+}
 /* end travel-main section */
 
 /* about section */
