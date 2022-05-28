@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third party libraries
+    'psycopg2',
+    'bootstrap4',
 
     # own
     'gallary',
