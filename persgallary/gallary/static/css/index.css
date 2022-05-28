@@ -6,7 +6,6 @@ font-family: 'Archivo', sans-serif;
 font-family: 'Beau Rivage', cursive;
 font-family: 'Bebas Neue', cursive;
 font-family: 'Fjalla One', sans-serif;
-font-family: 'Germania One', cursive;
 font-family: 'Inspiration', cursive;
 font-family: 'Jost', sans-serif;
 font-family: 'Kaushan Script', cursive;
@@ -22,7 +21,7 @@ font-family: 'Smooch Sans', sans-serif; */
 body{
     color: white;
     background-image: url(../images/bg.png);
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Germania One', cursive;
 }
 
 /* navigation */
@@ -43,24 +42,32 @@ body{
     
     text-decoration: none;
     list-style-type: none;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     color: #fff;
-
+    
 }
 
 .search-btn{
-    width: 30%;
+    /* width: 30%; */
     padding: 0.5rem 1rem;
 }
 /* end navigation */
 
 /* home page */
 .home-main{
-    text-align: center;
     height: 40rem;
+}
 
+.home-main p{
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    text-align: center;
+    font-size: xx-large;
+    text-transform: capitalize;
     
 }
+
 /* end home page */
 
 
