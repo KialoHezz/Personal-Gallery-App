@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<div class="travel-main">
+  <div class="tcard">
+    {% for category in categories %}
+    <h5 class="card-title"><b>{{category.name}}</b></h5>
+    <p class="card-text">{{category.description}}</p>
+    {% endfor%}
+    <a href="">Add</a>
+
+    <a href="">View</a>
+  </div>
+</div>
+{% endblock %}
