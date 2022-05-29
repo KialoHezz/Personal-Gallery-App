@@ -43,9 +43,11 @@ def add_details(request):
 
 def categories_view(request):
     categories = Category.objects.all()
+    details = Image.objects.all()
 
     cxt = {
             'categories': categories,
+            'details': details,
     }
 
     return render(request, 'categories.html',cxt)

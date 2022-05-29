@@ -8,8 +8,26 @@
     
   </div>
 
+
+   <div class="tcard">
+    {% for image in details %}
+    <h5 class="card-title"><b>{{image.name}}</b></h5>
+    <p class="card-text">{{image.description}}</p>
+    {% if image %}
+    <img src="{{image.image}}" alt="" >
+    {% else %}
+    <p>Image coming soon ...</p>
+    {% endif %}
+    <h1>{{image.updateAt}}</h1>
+    {% endfor%}
+    
+  </div>
+
+
+
+  
   <a href="{% url 'add_details' %}">Add</a>
 
-    <a href="">View</a>
+  <a href="">View</a>
 </div>
 {% endblock %}
