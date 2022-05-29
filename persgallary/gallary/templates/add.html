@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<a href="">Go Back</a>
+<a href="{% url 'categories_view' %}">Go Back</a>
 <h3>Add-New-details</h3>
 <form method="POST" action="">
     {% csrf_token %}
