@@ -1,33 +1,30 @@
 {% extends 'base.html' %} {% block content %}
+<div class="view-add">
+  <div class="add">
+    <a href="{% url 'add_details' %}">Add</a>
+  </div>
+</div>
+
 <div class="travel-main">
   <div class="tcard">
     {% for category in categories %}
+    <h3>category</h3>
     <h5 class="card-title"><b>{{category.name}}</b></h5>
     <p class="card-text">{{category.description}}</p>
     {% endfor%}
-    
   </div>
-
-
-   <div class="tcard">
+  
+  <div class="t_image">
     {% for image in details %}
-    <h5 class="card-title"><b>{{image.name}}</b></h5>
+    <h3 class="card-title"><b>{{image.name}}</b></h3>
     <p class="card-text">{{image.description}}</p>
     {% if image %}
-    <img src="{{image.image}}" alt="" >
+    <img src="{{images.image}}" alt="" />
     {% else %}
     <p>Image coming soon ...</p>
     {% endif %}
-    <h1>{{image.updateAt}}</h1>
+    <h6>{{image.updateAt}}</h6>
     {% endfor%}
-    
   </div>
-
-
-
-  
-  <a href="{% url 'add_details' %}">Add</a>
-
-  <a href="">View</a>
 </div>
 {% endblock %}

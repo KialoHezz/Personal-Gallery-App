@@ -11,15 +11,144 @@ font-family: 'Jost', sans-serif;
 font-family: 'Kaushan Script', cursive;
 font-family: 'Lavishly Yours', cursive;
 font-family: 'League Gothic', sans-serif;
-font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Serif', serif;
+font-family: 'Smooch', cursive;
 font-family: 'Rubik Glitch', cursive;
 font-family: 'Send Flowers', cursive;
-font-family: 'Smooch', cursive;
 font-family: 'Smooch Sans', sans-serif; */
 
 body {
   color: white;
   background-image: url(../images/bg.png);
   font-family: "Germania One", cursive;
+  font-size: 25px;
+}
+
+/* index */
+.home-main{
+  height: 40%;
+  text-align: center;
+}
+
+/* Navigation */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0 7rem;
+  /* background-color: rgba(0, 0, 139, 0.608); */
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+span {
+  color: #333;
+}
+
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 2rem;
+}
+
+.topnav a:hover {
+  color: rgba(255, 255, 255, 0.501);
+}
+
+.search-btn {
+  width: 14rem;
+  height: 2rem;
+}
+
+/* add form */
+.f-main {
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 9rem;
+  margin: 0 9rem;
+}
+
+.alink a {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 2rem;
+}
+
+.alink a:hover {
+  color: rgba(255, 255, 255, 0.501);
+  font-family: "Germania One", cursive;
+  font-size: xx-large;
+}
+
+.form-fields {
+  align-items: center;
+  background-color: rgba(26, 201, 172, 0.199);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+/* categories */
+.view-add {
+  text-align: center;
+}
+.add a {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 2rem;
+  text-transform: uppercase;
+}
+
+.view a {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 2rem;
+  text-transform: uppercase;
+}
+
+.add a:hover{
+  color: rgba(255, 255, 255, 0.501);
+  font-family: "Germania One", cursive;
+  font-size: xx-large;
+}
+
+.view a:hover {
+  color: rgba(255, 255, 255, 0.501);
+  font-family: "Germania One", cursive;
+  font-size: xx-large;
+}
+
+.travel-main {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tcard {
+  background-color: rgba(255, 255, 255, 0.149);
+  width: 25%;
+  height: 50%;
+}
+
+.t_image {
+  height: 50%;
+  width: 80%;
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+}
+
+
+/* footer */
+.footer{
+  text-transform: uppercase;
+  text-align: center;
 }

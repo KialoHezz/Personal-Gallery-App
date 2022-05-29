@@ -1,13 +1,15 @@
-{% extends 'base.html' %}
-{% block content %}
-<a href="{% url 'categories_view' %}">Go Back</a>
-<h3>Add-New-details</h3>
-<form method="POST" action="">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="Add-New-details">
-</form>
-
-
+{% extends 'base.html' %} {% block content %}
+<div class="f-main">
+  <div class="alink">
+    <a href="{% url 'categories_view' %}">Go Back</a>
+  </div>
+  <div class="form-fields">
+    <h3><b><i>Add-New-details</i></b></h3>
+    <form method="POST" action="">
+      {% csrf_token %} {{form.as_p}}
+      <input type="submit" value="Add-New-details" />
+    </form>
+  </div>
+</div>
 
 {% endblock%}

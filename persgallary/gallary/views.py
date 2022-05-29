@@ -54,6 +54,24 @@ def categories_view(request):
 
 
 
+def search_results(request):
+    if 'search' in request.GET and request.GET['search']:
+
+        search_term = request.GET.get('search')
+
+        search_searchies = Image.search_by_name(search_term)
+
+
+        messages = f'{search_term}'
+
+    else:
+
+        messages = "You have't searched for any term"
+
+    return render(request, 'search.html', {'messages':messages})
+
+
+
 def view_image(request, pk):
     images = Image.objects.get(id=pk)
 
