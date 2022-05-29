@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from gallary.models import (Image,Location,Category)
 from gallary.forms import ImageForm
+from django.contrib import messages
 
 # Create your views here.
 def index_view(request):
@@ -59,7 +60,7 @@ def search_results(request):
 
         search_term = request.GET.get('search')
 
-        search_searchies = Image.search_by_name(search_term)
+        search_searchies = Image.name(search_term)
 
 
         messages = f'{search_term}'

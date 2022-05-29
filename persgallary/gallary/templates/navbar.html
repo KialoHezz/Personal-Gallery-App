@@ -8,11 +8,8 @@
     <a href="{% url 'about_view' %}">About</a>
      <a href="{% url 'categories_view' %}">Categories</a>
     
-    <input
-      class="search-btn"
-      type="text"
-      placeholder="Search..."
-      name="search"
-    />
+    <form action="{% url 'search_results' %}" >
+      <input class="search-btn" type="text" placeholder="Search..." name="search"/>
+    </form>
   </div>
 </div>
