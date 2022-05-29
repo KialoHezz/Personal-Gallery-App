@@ -15,15 +15,15 @@
   </div>
   
   <div class="t_image">
-    {% for image in details %}
-    <h3 class="card-title"><b>{{image.name}}</b></h3>
-    <p class="card-text">{{image.description}}</p>
-    {% if image %}
+    {% for images in details %}
+    <h3 class="card-title"><b>{{images.name}}</b></h3>
+    <p class="card-text">{{images.description}}</p>
+    {% if images %}
     <img src="{{images.image}}" alt="" />
     {% else %}
     <p>Image coming soon ...</p>
     {% endif %}
-    <h6>{{image.updateAt}}</h6>
+    <h6>{{images.updateAt}}</h6>
     {% endfor%}
   </div>
 </div>
