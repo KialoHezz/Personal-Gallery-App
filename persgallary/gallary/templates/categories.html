@@ -5,9 +5,11 @@
     <h5 class="card-title"><b>{{category.name}}</b></h5>
     <p class="card-text">{{category.description}}</p>
     {% endfor%}
-    <a href="">Add</a>
+    
+  </div>
+
+  <a href="{% url 'add_details' %}">Add</a>
 
     <a href="">View</a>
-  </div>
 </div>
 {% endblock %}

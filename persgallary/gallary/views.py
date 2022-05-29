@@ -16,6 +16,27 @@ def about_view(request):
     return render(request, 'about.html')
 
 
+def add_details(request):
+    form = ImageForm()
+
+    if request.method == 'POST':
+        print(request.POST)
+
+        form = ImageForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+
+
+    else:
+
+        form = ImageForm()
+
+    cxt = {
+            'form': form,
+        }
+
+    return render(request, 'add.html',cxt)
 
 
 
