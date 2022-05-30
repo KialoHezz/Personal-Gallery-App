@@ -56,17 +56,17 @@ def categories_view(request):
 
 
 def search_results(request):
-    if 'search' in request.GET and request.GET['search']:
+    if 'look_search' in request.GET and request.GET['look_search']:
+        dat = ''
 
-        search_term = request.GET.get('search')
+        search_term = request.GET.get('look_search')
 
-        search_searchies = Image.name(search_term)
+        search_searchies = Image(search_term)
 
 
         messages = f'{search_term}'
 
     else:
-
         messages = "You have't searched for any term"
 
     return render(request, 'search.html', {'messages':messages})
