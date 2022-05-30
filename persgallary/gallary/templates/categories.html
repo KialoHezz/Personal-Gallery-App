@@ -18,11 +18,8 @@
     {% for images in details %}
     <h3 class="card-title"><b>{{images.name}}</b></h3>
     <p class="card-text">{{images.description}}</p>
-    {% if images %}
-    <img src="{{images.image}}" alt="" />
-    {% else %}
+    <img src="{{images.image}}" alt="{{images.image.name}}" />
     <p>Image coming soon ...</p>
-    {% endif %}
     <h6>{{images.updateAt}}</h6>
     {% endfor%}
   </div>
