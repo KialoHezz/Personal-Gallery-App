@@ -1,0 +1,1 @@
+ web: gunicorn persgallary.wsgi --log-file -
