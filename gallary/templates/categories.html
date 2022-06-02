@@ -18,7 +18,7 @@
     {% for images in details %}
     <h3 class="card-title"><b>{{images.name}}</b></h3>
     <p class="card-text">{{images.description}}</p>
-    <img src="{{images.image}}" alt="{{images.image.name}}" />
+    <img src="{{images.image.url}}" alt="{{images.image.name}}" />
     <p>Image coming soon ...</p>
     <h6>{{images.updateAt}}</h6>
     {% endfor%}
